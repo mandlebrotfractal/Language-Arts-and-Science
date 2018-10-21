@@ -1,0 +1,239 @@
+
+    .desktop{
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+        font-family: Avenir Next, sans-serif; 
+        font-size: 2.2em; 
+        padding: 20px 0px 15px 0px; 
+    }
+
+    .top-nav{
+        background: #f5930b;
+        height: 80px; 
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    
+    .laslogo {
+        margin: 15px 0px 10px 5%;
+      }
+
+      .mobile-nav-menus{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 5% 0px 0px; 
+        width: 35%; 
+      }
+
+      .nav-login{
+          background: #fac985;
+          border-radius: 15px; 
+          padding: 2px 12.5% 2px 12.5%;
+          width: 50%;
+          text-align: center; 
+          font-size: 0.5em;
+          font-family: Avenir Next Bold, Avenir, sans-serif;
+      }
+      
+      
+
+      .bar-menu{
+        display: inline-block;
+        cursor: pointer;
+        width: 30%;
+      }
+      
+      .bar{
+    
+        width: 100%;
+        height: 3px;
+        background: #fbd49d;
+        margin: 4px 0px 4px 0px;
+      }
+
+      .porttitle{
+          border-bottom: 1px solid #3C3C3C;
+          margin-bottom: 10px; 
+          color: #fbfbfb;
+      }
+
+      .porttext{
+          text-align: center;
+          font-family: Avenir Next, sans-serif; 
+          color: #fbfbfb;
+          font-size: 1.1em; 
+          margin: 10px 0px 10px 0px; 
+      }
+
+      .portimg{
+          margin: auto; 
+          display: block;
+      }
+
+      .portfolio{
+          background: #72c267;
+      }
+
+      .portlinks{
+        display: flex; 
+        flex-flow: row wrap;
+      }
+
+      .card{
+          width: 100%;
+          border-bottom: 1px solid #3C3C3C;
+          margin-bottom: 10px; 
+      }
+
+      .trans-btn-container{
+          position: relative;
+          text-align: center; 
+          margin: 20px auto 20px auto; 
+
+      }
+
+      .show-more-work{
+        background: #3c3c3c;
+        border-radius: 15px; 
+        padding: 2px 10px 2px 10px;
+        opacity: 0.65;
+        height: 115%; 
+        position: absolute;
+        width: 120%;
+        top: -10%;
+        left: -10%;
+      }
+
+      .trans-work-text{
+        font-family: Avenir Next Bold, Avenir, sans-serif;
+        color: #fbfbfb; 
+        font-size: 1.1em;
+        position: relative;
+      }
+      
+      .clientlinks{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;  
+          flex-wrap: wrap;
+          margin: auto; 
+          width: 90%; 
+      }
+
+      .client-image {
+          align-self: center;
+          position: relative;  
+          width: 100px;  
+          margin: 10px 0px 10px 0px;   
+      }
+
+      .client-seven{
+          width: 150px;
+      }
+
+      .client-eight{
+          width: 150px; 
+      }
+
+      .client-nine{
+          width: 150px;
+      }
+
+      .client-ten{
+          width: 150px; 
+      }
+
+      .logo-client{
+          
+      }
+
+      .blurb{
+          width: 80%; 
+          margin: 0px auto 25px auto; 
+          background: #fbfbfb;
+          text-align: center;
+          border-radius: 15px;  
+          display: block;
+      }
+
+      .blurbtcon{
+          width: 90%; 
+          margin: auto;
+      }
+
+      .blurbtext{
+          padding: 0px 0px 10px 0px; 
+      }
+
+      .whoweare{
+        background: #72c267;
+        padding: 0px 0px 25px 0px;
+      }
+
+      .testimonial{
+          background: blue; 
+          padding: 0px 0px 25px 0px; 
+      }
+      
+      .foot{
+        background: #72c267;
+        font-size: 0.65em;
+      }
+
+      .socialicons{
+          text-align: center;
+          padding: 10px 0px 10px 0px; 
+          color: #fbfbfb;
+      }
+
+      .socialicons > * {
+          margin: 0px 5px 0px 5px; 
+      }
+
+      .footerinfo{
+          width: 95%; 
+          margin: auto; 
+          padding: 0px 0px 10px 0px; 
+          color: #fbfbfb; 
+      }
+
+      .footeraddress{
+          width: 48%; 
+          display: inline-block;
+          vertical-align: top;
+          font-family: Avenir Next, sans-serif;
+      }
+
+      .footerlinks{
+          width: 40%; 
+          display: inline-block;
+          font-family: Avenir, sans-serif;
+          float: right;
+      }
+
+      .aboutuslinks{
+        width: 40%; 
+        display: inline-block;
+      }
+
+      .contactuslinks{
+          width: 40%; 
+          display: inline-block;
+          vertical-align: top;
+          float: right;
+      }
+
+      .copyrightarea{
+          background: #fbfbfb;
+          text-align: center; 
+          padding: 10px 0px 10px 0px; 
+      }
+
+      
