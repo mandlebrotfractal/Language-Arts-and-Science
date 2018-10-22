@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let arrayOfPercent = () => {
         let arr =  []; 
         for(let i = 0; i < document.querySelectorAll(".slide").length; i++){
-            arr.push(i * 100); 
+            arr.push((i - 1) * 100); 
         }
         return arr;
     }
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let sliderControls = {
     slides: document.querySelectorAll(".slide"),
     amount: document.querySelectorAll(".slide").length,
-    index: 0,  
-    farright: (document.querySelectorAll(".slide").length - 1) * 100,
+    index: 1,  
+    farright: (document.querySelectorAll(".slide").length - 2) * 100,
     curtrans: arrayOfPercent()
     }
 
@@ -21,36 +21,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log(sliderControls.curtrans);
 
     let loopThroughBackgroundsRight = () => {
-        console.log(sliderControls.amount + (sliderControls.index - sliderControls.amount));
         sliderControls.index--; 
         if(sliderControls.index <= -1){
             sliderControls.index = sliderControls.amount - 1; 
         }
+        if(sliderControls.index === 0){
+            sliderControls.slides[sliderControls.amount - 1].style.zindex =  '-2';
+        }
+        console.log(sliderControls.index);
         for(let i = 0; i < sliderControls.amount; i++){
             if(i === sliderControls.index){
-                console.log(sliderControls.curtrans);
-                console.log(sliderControls.index);
-                sliderControls.slides[i].style.transform = 'translate(0%, 0%)';
-                sliderControls.curtrans[i] = 0; 
+                sliderControls.slides[i].style.transform = 'translate(-100%, 0%)';
+                sliderControls.curtrans[i] = -100; 
             }
             else{
                 sliderControls.curtrans[i] = sliderControls.curtrans[i] + 100;
-                sliderControls.slides[i].style.transform = `translate(${sliderControls.curtrans[i]}%, 0%)`;
+                sliderControls.slides[i].style.cssText = `transform: translate(${sliderControls.curtrans[i]}%, 0%); zindex: -2;`;
             }
         }
        
     }
     
     let loopThroughBackgroundsLeft = () => {
+        console.log(sliderControls.index);
         for(let i = 0; i < sliderControls.amount; i++){
             if(i === sliderControls.index){
-                sliderControls.slides[i].style.transform = `translate(${sliderControls.farright}%, 0%)`;
+                sliderControls.slides[i].style.cssText = `transform: translate(${sliderControls.farright}%, 0%); zindex: -2;`;
                 sliderControls.curtrans[i] = sliderControls.farright; 
             }   
             else{
-                console.log(sliderControls.curtrans[i]);
                 sliderControls.curtrans[i] = sliderControls.curtrans[i] - 100; 
-                console.log(sliderControls.curtrans);
                 sliderControls.slides[i].style.transform =`translate(${sliderControls.curtrans[i]}%, 0%)`;
             }
         }
@@ -61,7 +61,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     }
 
-    document.getElementById("carouselright").addEventListener("click", loopThroughBackgroundsRight);
-    document.getElementById("carouselleft").addEventListener("click", loopThroughBackgroundsLeft);
+    if(document.getElementById("carouselright")){
+        document.getElementById("carouselright").addEventListener("click", loopThroughBackgroundsRight);
+    }
+    if(document.getElementById("carouselleft")){
+        document.getElementById("carouselleft").addEventListener("click", loopThroughBackgroundsLeft);
+    }
+    if(document.getElementById("carouselright")){
+        document.getElementById("carouselright").addEventListener("click", loopThroughBackgroundsRight);
+    }
+    if(document.getElementById("carouselleft")){
+        document.getElementById("carouselleft").addEventListener("click", loopThroughBackgroundsLeft);
+    }
+
+  
 
 })

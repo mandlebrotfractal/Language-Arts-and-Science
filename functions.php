@@ -26,6 +26,15 @@ function add_theme_scripts() {
   }
   add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+  register_nav_menus(
+	array(
+		'primary'	=>	__( 'Primary Menu', 'naked' ),
+		'mobile-nav'	=>	__( 'Mobile Menu', 'naked' ), // Register the Primary menu
+		// Copy and paste the line above right here if you want to make another menu,
+		// just change the 'primary' to another name
+	)
+);
+
   function las_change_clients_displayed( $wp_customize){
       $wp_customize->add_section('las_customer_images', array(
           'title' => 'Our Clients'

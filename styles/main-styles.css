@@ -60,7 +60,7 @@
       .slide{
           width: 100%; 
           height: 250px; 
-          position: absolute;
+          position: absolute; 
       }
 
       .carousel{
@@ -70,13 +70,13 @@
       }
 
       .carouseltext{
-          position: absolute;
+          position: relative;
           top: 50%;
-          width: 75%; 
-          left: 15%; 
+          width: 75%;
           color: #fbfbfb;
           font-family: Avenir Next, sans-serif;
           text-align: center;
+          margin: auto;
       }
 
       .carouselleft{
@@ -102,6 +102,20 @@
         width: 25px; 
       }
 
+      .contactustop{
+          position: relative;
+          border-radius: 15px;
+          width: 20%; 
+          margin: auto;
+          top: 80%; 
+          background: #ffffff; 
+          text-align: center;
+      }
+
+      .contactustoptext{
+          font-family: Avenir Next, sans-serif; 
+      }
+
       .carouselone{
         background-image: linear-gradient(rgba(114,194,103,0.65), rgba(114,194,103,0.65)), url(../images/cogs.jpg);
         background-size: cover;
@@ -121,6 +135,55 @@
         background-size: cover;
         top: 0%; 
         transform:translate(200%, 0%);
+      }
+
+      .contactfront{
+          position: relative; 
+      }
+
+    .contactdfrontback{
+        background-image: linear-gradient(rgba(114,194,103,0.65), rgba(114,194,103,0.65)), url(../images/cogs.jpg);
+        background-size: cover;
+        top: 0%; 
+        width: 100%; 
+      }
+
+      .contactfronttext{
+          text-align: center;
+          font-family: Avenir Next, sans-serif;
+          color: #fbfbfb;
+          font-size: 1.1em; 
+          position: relative;
+          margin: auto;
+          padding: 30px 0px 30px 0px; 
+      }
+      
+      .contactform{
+          width: 95%; 
+          margin: auto; 
+          background:rgba(53,50,50, 0.75); 
+          padding: 0px 2.5px 20px 2.5px; 
+      }
+
+      .in{
+          width: 96%; 
+          padding: 10px 0px 10px 0px; 
+          margin: 0px auto 10px auto; 
+          display: block;
+          border: none; 
+          border-radius: 10px; 
+
+      }
+
+      .contactsubmit{
+          background: rgba(160,160,160, 0.5);
+          color: #fbfbfb; 
+          font-family: Avenir Next, sans-serif;
+          display: block;
+          font-size: 1em; 
+          margin: 20px auto 0px auto;
+          border-radius: 15px; 
+          padding: 5px 15px 5px 15px; 
       }
     
       .porttitle{
@@ -144,6 +207,7 @@
 
       .portfolio{
           background: #72c267;
+          padding: 0px 0px 20px 0px; 
       }
 
       .portlinks{
@@ -161,7 +225,7 @@
           position: relative;
           text-align: center; 
           margin: 20px auto 20px auto; 
-
+          width: 30%; 
       }
 
       .show-more-work{
@@ -254,10 +318,6 @@
           padding: 0px 0px 25px 0px; 
       }
 
-      .testimonial .trans-btn-container{
-          width: 30%; 
-      }
-
       .testimonial .title{
         color: #fbfbfb; 
     }
@@ -324,4 +384,213 @@
           padding: 10px 0px 10px 0px; 
       }
 
+@media screen and (min-width: 479px){
+
+    .carousel{
+        height: 275px; 
+    }
+
+    .slide{
+        height: 275px; 
+    }
+
+    .porttitle{
+        margin-bottom: 0px; 
+    }
+
+    .card{
+        width: 50%; 
+        border: 1px solid #3C3C3C;
+        padding: 10px; 
+        display: flex; 
+        flex-flow: column;
+        align-items: center; 
+        margin: 0px; 
+    }
+
+    .card:nth-child(odd){
+        border-left: none; 
+    }
+
+    .card:nth-child(even){
+        border-right: none; 
+    }
+
+    .client-image{
+        width: 150px; 
+    }
+
+    .client-seven{
+        width: 200px;
+    }
+
+    .client-eight{
+        width: 200px; 
+    }
+
+    .client-nine{
+        width: 200px;
+    }
+
+    .client-ten{
+        width: 200px; 
+    }
+}
+
+@media screen and (min-width: 768px){
+  
+    .mobile{
+        display: none; 
+    }
+
+    .desktop{
+        display: inherit;
+    }
+
+    .main-navigation{
+        margin: 0px 15px  0px 0px; 
+    }
+
+    .desktop-main-menu-container ul li{
+        float: left; 
+        color: #fffefe;
+        font-family: Avenir, sans-serif; 
+        font-size: 0.8em; 
+        margin: 0px 10px 0px 0px; 
+        position: relative; 
+    }
+
+    .desktop-main-menu-container ul li:last-child{
+        padding: 0px 10px 0px 10px; 
+        border-radius: 15px; 
+        background: #fffefe;  
+        color: black; 
+    }
+
+    .desktop-main-menu-container ul li ul{
+        display: none; 
+    }
+
+    .desktop-main-menu-container ul li:hover{
+        color: #235a91;
+        z-index: 2;
+    }
+
+    .desktop-main-menu-container ul li:hover ul{
+        display: block; 
+        position: absolute; 
+        background: rgb(194,192,190,0.6);
+        width: 150px; 
+        top: 5%; 
+        padding: 25px 0px 15px 5px; 
+        z-index: -1; 
+    }
+
+    .desktop-main-menu-container ul li ul li{
+        padding: 2.5px 0px 2.5px 0px; 
+        background: #fffefe; 
+        margin: 0px 0px 5px 0px; 
+        color: black; 
+        font-family: Avenir Next, sans-serif; 
+        position: relative; 
+        left: -5px; 
+        width: 150px;
+    }
+
+    .desktop-main-menu-container ul li ul li:last-child{
+        padding: 0px 10px 0px 10px; 
+        border-radius: 0px; 
+        background: #fffefe;  
+    }
+
+    .main-menu{
+        float: right; 
+        display: inline-block; 
+       
+    }
+
+    .contactustop{
+        width: 15%; 
+    }
+
+    .portfolio .title{
+      padding: 15px 0px 0px 0px;
+      border: none;  
+    }
+
+    .portlinks{
+        flex-flow: nowrap; 
+        justify-content: space-around;
+    }
+
+    .card{
+        border: none;
+        width: 100px;   
+    }
+
+    .trans-btn-container{
+        width: 16%; 
+    }
+
+
+
+    .client-image{
+        width: 200px; 
+    }
+
+    .client-seven{
+        width: 300px;
+    }
+
+    .client-eight{
+        width: 300px; 
+    }
+
+    .client-nine{
+        width: 300px;
+    }
+
+    .client-ten{
+        width: 300px; 
+    }
+
+    .whoweare{
+        display: flex;
+        flex-flow: wrap; 
+    }
+
+    .whoweare .title {
+        width: 100%; 
+    }
+
+    .blurb{ 
+        width: 30%; 
+    }
+
+    .blurb img{
+        height: 100px; 
+    }
+
+    .testimonial{
+        display: flex; 
+        flex-wrap: wrap; 
+    }
+
+    .testimonial .title{
+        width:  100%; 
+    }
+
+    .socialicons{
+        float: right;
+        text-align: right;
+        padding: 10px 20px 10px 0px; 
+        width: 50%; 
+    }
+
+    .footerinfo{
+        width: 50%; 
+        margin: 0px 0px 0px 5px; 
+        padding: 0px 0px 10px 0px; 
+    }
+}
       

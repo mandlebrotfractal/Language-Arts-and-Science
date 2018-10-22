@@ -26,7 +26,9 @@
             <img class="portimg" src="<?php bloginfo('template_url');?>/images/lightbulb.png" width="115px" height="auto">
             <p class="porttext">See Our Work</p>
         </div>
-        <div class="trans-btn-container">
+        
+    </div>
+    <div class="trans-btn-container">
             <div class="show-more-work" id="showMoreWord">
                 
             </div>
@@ -34,5 +36,4 @@
                 See Our Work
             </p>
         </div>
-    </div>
 </section>
