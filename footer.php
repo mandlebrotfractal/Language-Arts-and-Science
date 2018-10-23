@@ -32,6 +32,7 @@
     <div class="copyrightarea" id="copyrightarea">
         Copyright Language Arts and Sciences
     </div>
+    <?php echo do_shortcode("[sitepoint_contact_form]"); ?>
 <?php wp_footer()?>
 </footer>
-</body>
+</body> 

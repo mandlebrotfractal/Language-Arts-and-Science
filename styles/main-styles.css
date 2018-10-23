@@ -116,6 +116,10 @@
           font-family: Avenir Next, sans-serif; 
       }
 
+      .contacttitle{
+          color: #fffefe;
+      }
+
       .carouselone{
         background-image: linear-gradient(rgba(114,194,103,0.65), rgba(114,194,103,0.65)), url(../images/cogs.jpg);
         background-size: cover;
@@ -511,6 +515,28 @@
 
     .contactustop{
         width: 15%; 
+    }
+
+    .contactdfrontback{
+        height: 325px; 
+        display: flex; 
+    }
+
+    .contactfronttext{
+        width: 60%; 
+        display: inline-block; 
+    }
+
+    .contactform{
+        width: 30%;
+        float: right; 
+        display: inline-block;
+        margin: 10px 20px 10px 20px; 
+        border-radius: 12px; 
+    }
+
+    .in{
+        width: 80%; 
     }
 
     .portfolio .title{

@@ -1,19 +1,58 @@
 
-<?php  include('contact-form.php');?>
-<section class="contactfront" id="contactfront">
+<?php 
 
+
+$res = "";
+
+    
+function las_deliver_mail() {
+    if(isset($_POST['uniqueid']) AND $_POST['uniqueid'] == $_SESSION['uniqueid'] ){
+
+    }
+    else{
+        $_SESSION['uniqueid'] = $_POST['uniqueid'];
+        if ( isset( $_POST['submit'] ) ) {
+
+            
+
+            $firstname = sanitize_text_field( $_POST["firstname"] );
+            $lastname = sanitize_text_field( $_POST["lastname"] );
+            $email = sanitize_email( $_POST["email"] );
+            $question = sanitize_text_field( $_POST["question"] );
+            $subject = sanitize_text_field($_POST["question"]);
+    
+            $to = get_option( 'admin_email' );
+    
+            $headers = "From: $firstname $lastname <$email>" . "\r\n";
+
+            wp_mail( $to, $subject, $question, $headers );
+
+            if ( wp_mail( $to, $subject, $question, $headers ) ) {
+                $res = "<div class='contactsuccess' id='contactsuccess'>Thank you for contacting us we will be in touch with you shortly.'</div>";
+            } else {
+                $res =  '<div class="contacterror" id="contacterror"> Somehting went wrong.</div>';
+            }
+        }
+    }
+}
+
+las_deliver_mail();
+?>
+
+<section class="contactfront" id="contactfront">
     <div class="contactdfrontback" id=contactfrontback">
-        <?php echo esc_url( $_SERVER['REQUEST_URI'] ) ?>
         <p class="contactfronttext">We're a reliable translation company that you can count on.</p>
-        <form class="contactform" id="contactform" action="<?php the_permalink(); ?>" method="post">
+        <!-- <form class="contactform" id="contactform" action="'get_template_directory_uri()'.contact-form.php" method="post"> -->
+        <form class="contactform" id="contactform" action="<?echo $_SERVER['PHP_SELF']; ?>" method="post">
             <p class="title contacttitle">Contact Us</p>
-            <input class="in" for="firstname" placeholder="First" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
+            <input type="hidden" name="uniqueid" value="<?php echo uniqid();?>">
+            <input class="in" name="firstname" for="firstname" placeholder="First" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
     onchange="try{setCustomValidity('')}catch(e){}" value=""> 
-            <input class="in" for="lastname" placeholder="Last" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
+            <input class="in"  name="lastname" for="lastname" placeholder="Last" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
     onchange="try{setCustomValidity('')}catch(e){}" value="">
-            <input class="in" for="email" placeholder="Email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
+            <input class="in" name="email" for="email" placeholder="Email" value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
     onchange="try{setCustomValidity('')}catch(e){}">
-            <input class="in" for="question" placeholder="Question" value="">
+            <input class="in" name="question" for="question" placeholder="Question" value="">
             <input class="btn contactsubmit" type="submit" name="submit" value="Submit">
     </div>
 
