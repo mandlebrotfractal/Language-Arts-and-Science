@@ -9,19 +9,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
         return arr;
     }
 
+    
     let sliderControls = {
     slides: document.querySelectorAll(".slide"),
     amount: document.querySelectorAll(".slide").length,
     index: 0,  
     farright: (document.querySelectorAll(".slide").length - 2) * 100,
-    curtrans: arrayOfPercent()
+    curtrans: arrayOfPercent(),
+    playing: false 
     }
 
     
-    console.log(sliderControls.curtrans);
-
     let loopThroughBackgroundsRight = (event) => {
-        console.log(event);
+        if(sliderControls.playing === false){
+        sliderControls.playing = true; 
         sliderControls.index--; 
         if(sliderControls.index <= -1){
             sliderControls.index = sliderControls.amount - 1; 
@@ -38,11 +39,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 sliderControls.slides[i].style.transform = `translate(${sliderControls.curtrans[i]}%, 0%)`;
             }
         }
+        setTimeout(function(){sliderControls.playing = false}, 500); 
+    }
+    else{
+        return; 
+    }
        
     }
     
     let loopThroughBackgroundsLeft = (event) => {
-        console.log(event); 
+        if(sliderControls.playing === false){
+        sliderControls.playing = true; 
         for(let i = 0; i < sliderControls.amount; i++){
             if(i === sliderControls.index){
                 sliderControls.slides[i].style.opacity = '0'; 
@@ -59,12 +66,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
         if(sliderControls.index > sliderControls.amount - 1){
             sliderControls.index = 0;
         }
+        setTimeout(function(){sliderControls.playing = false}, 500); 
+    }
+    else{
+
+    }
 
     }
 
     let autoRun = () => {
         loopThroughBackgroundsRight(); 
-        setInterval(loopThroughBackgroundsRight, 5000); 
+        setInterval(function(){!sliderControls.playing ? loopThroughBackgroundsRight() : null}, 5000); 
     }
 
     autoRun();

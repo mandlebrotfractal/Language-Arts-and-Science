@@ -42,7 +42,6 @@ las_deliver_mail();
 <section class="contactfront" id="contactfront">
     <div class="contactdfrontback" id=contactfrontback">
         <p class="contactfronttext">We're a reliable translation company that you can count on.</p>
-        <!-- <form class="contactform" id="contactform" action="'get_template_directory_uri()'.contact-form.php" method="post"> -->
         <form class="contactform" id="contactform" action="<?echo $_SERVER['PHP_SELF']; ?>" method="post">
             <p class="title contacttitle">Contact Us</p>
             <input type="hidden" name="uniqueid" value="<?php echo uniqid();?>">
