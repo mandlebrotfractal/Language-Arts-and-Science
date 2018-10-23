@@ -54,5 +54,7 @@ las_deliver_mail();
     onchange="try{setCustomValidity('')}catch(e){}">
             <input class="in" name="question" for="question" placeholder="Question" value="">
             <input class="btn contactsubmit" type="submit" name="submit" value="Submit">
+        </form>
     </div>
+</section>
 
