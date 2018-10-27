@@ -1,7 +1,6 @@
 <section class="whoweare" id="whoweare">
     <p class="title">Who We Are</p> 
     <div class="blurb" id="iso">
-        <img src="">
         <div class="blurbtcon">
             <img src="<?php bloginfo('template_url');?>/images/ISO9001.png" alt="iso 9001 logo"> 
             <p class="subtitle">We're ISO 9001 certifed.</p> 
@@ -9,7 +8,6 @@
         </div>
     </div>
     <div class="blurb" id="mbe">
-        <img src="">
         <div class="blurbtcon">
             <img src="<?php bloginfo('template_url');?>/images/MBE.png" alt="MBE">
             <p class="subtitle">We're certified MBE.</p>
@@ -17,7 +15,6 @@
         </div>
     </div>
     <div class="blurb" id="microsoftpartner">
-        <img src="">
         <div class="blurbtcon">
             <img src="<?php bloginfo('template_url');?>/images/Microsoft_Logo.png" alt="Microsoft Partner Logo">
             <p class="subtitle">We're a Microsoft Network Partner.</p>

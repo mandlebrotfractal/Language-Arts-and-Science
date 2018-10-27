@@ -13,7 +13,7 @@
   <body>
   <section class="top-nav" id="topNav">
       <div class="laslogo" id="laslogo">
-          <img src="<?php bloginfo('template_url');?>/images/LAS_Logo.png" height="60px" width="auto" alt="Language Arts and Sciences Logo">
+          <img src="<?php bloginfo('template_url');?>/images/LAS_Logo.png" height="auto" width="auto" alt="Language Arts and Sciences Logo">
       </div>
       <div class="mobile-nav-menus mobile" id="mobileNavMenus">
           <div class="nav-login" id="nav-login">

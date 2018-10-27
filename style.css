@@ -65,3 +65,16 @@ address{
 .btn{
     border: none; 
 }
+
+::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+    color: black;
+}
+
+::-ms-input-placeholder {
+    color: black;
+}

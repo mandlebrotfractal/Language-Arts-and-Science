@@ -43,15 +43,15 @@ las_deliver_mail();
     <div class="contactdfrontback" id=contactfrontback">
         <p class="contactfronttext">We're a reliable translation company that you can count on.</p>
         <form class="contactform" id="contactform" action="<?echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <p class="title contacttitle">Contact Us</p>
+            <p class="title contacttitle">CONTACT US:</p>
             <input type="hidden" name="uniqueid" value="<?php echo uniqid();?>">
-            <input class="in" name="firstname" for="firstname" placeholder="First" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
+            <input class="in" name="firstname" for="firstname" placeholder="FIRST:" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
     onchange="try{setCustomValidity('')}catch(e){}" value=""> 
-            <input class="in"  name="lastname" for="lastname" placeholder="Last" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
+            <input class="in"  name="lastname" for="lastname" placeholder="LAST:" pattern="[a-zA-Z ]+" oninvalid="setCustomValidity('Please enter only alphabetical characters.')"
     onchange="try{setCustomValidity('')}catch(e){}" value="">
-            <input class="in" name="email" for="email" placeholder="Email" value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
+            <input class="in" name="email" for="email" placeholder="EMAIL:" value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
     onchange="try{setCustomValidity('')}catch(e){}">
-            <input class="in" name="question" for="question" placeholder="Question" value="">
+            <input class="in" name="question" for="question" placeholder="QUESTION:" value="">
             <input class="btn contactsubmit" type="submit" name="submit" value="Submit">
         </form>
     </div>

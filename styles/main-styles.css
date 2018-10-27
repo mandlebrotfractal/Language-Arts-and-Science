@@ -7,7 +7,14 @@
         text-align: center;
         font-family: Avenir Next, sans-serif; 
         font-size: 2.2em; 
-        padding: 20px 0px 15px 0px; 
+        padding: 20px 0px 15px 0px;  
+    }
+
+    .sectitle{
+        text-align: center;
+        font-family: Avenir Next, sans-serif; 
+        font-size: 2.2em; 
+        padding: 20px 0px 15px 0px;
     }
 
     .top-nav{
@@ -21,6 +28,7 @@
     
     .laslogo {
         margin: 15px 0px 10px 5%;
+        height: 58px; 
       }
 
       .mobile-nav-menus{
@@ -59,20 +67,20 @@
 
       .slide{
           width: 100%; 
-          height: 250px; 
+          height: 315px; 
           position: absolute;
           transition: 1s transform, 0s opacity;  
       }
 
       .carousel{
           overflow-x: hidden; 
-          height: 250px; 
+          height: 315px; 
           position: relative;
       }
 
       .carouseltext{
           position: relative;
-          top: 50%;
+          top: 36%;
           width: 75%;
           color: #fbfbfb;
           font-family: Avenir Next, sans-serif;
@@ -85,7 +93,7 @@
           border-top: 3px solid #fbfbfb; 
           border-left: 3px solid #fbfbfb; 
           transform: rotate(-45deg); 
-          top: 50%; 
+          top: 40%; 
           left: 5%;
           height: 25px; 
           width: 25px; 
@@ -97,7 +105,7 @@
         border-top: 3px solid #fbfbfb; 
         border-left: 3px solid #fbfbfb; 
         transform: rotate(135deg); 
-        top: 50%; 
+        top: 40%; 
         right: 5%;
         height: 25px; 
         width: 25px; 
@@ -106,11 +114,13 @@
       .contactustop{
           position: relative;
           border-radius: 15px;
-          width: 20%; 
+          width: 125px; 
           margin: auto;
           top: 80%; 
           background: #ffffff; 
           text-align: center;
+          padding: 1px 0px 1px 0px; 
+          font-size: 1.1em; 
       }
 
       .contactustoptext{
@@ -119,25 +129,28 @@
 
       .contacttitle{
           color: #fffefe;
+          font-size: 1.2em; 
+          padding: 5px 0px 6px 0px; 
+          font-family: Avenir Next, sans-serif; 
       }
 
       .carouselone{
-        background-image: linear-gradient(rgba(114,194,103,0.65), rgba(114,194,103,0.65)), url(../images/cogs.jpg);
+        background-image: linear-gradient(rgba(84,164,73,0.65), rgba(84,164,73,0.65)), url(../images/cogs.jpg);
         background-size: cover;
         top: 0%; 
         transform:translate(0%, 0%);
       }
 
       .carouseltwo{
-        background-image: linear-gradient(rgba(245,110,2, 0.65), rgba(245,110,2, 0.65)), url(../images/peoplequestionmark.jpg);
-        background-size: cover;
+        background-image: linear-gradient(rgba(225,90,0, 0.75), rgba(225,90,0, 0.75)), url(../images/peoplequestionmark.jpg);
+        background-size: 100% 100%;
         top: 0%; 
         transform:translate(100%, 0%);
       }
 
       .carouselthree{
-        background-image: linear-gradient(rgba(16,104,173,0.65), rgba(16,104,173,0.65)), url(../images/faces.jpg);
-        background-size: cover;
+        background-image: linear-gradient(rgba(0,84,153,0.75), rgba(0,84,153,0.75)), url(../images/facesextract.png);
+        background-size: 100% 100%;
         top: 0%; 
         transform:translate(200%, 0%);
       }
@@ -147,8 +160,8 @@
       }
 
     .contactdfrontback{
-        background-image: linear-gradient(rgba(114,194,103,0.65), rgba(114,194,103,0.65)), url(../images/cogs.jpg);
-        background-size: cover;
+        background-image: linear-gradient(rgba(84,164,73,0.65), rgba(84,164,73,0.65)), url(../images/cogs.jpg);
+        background-size: contain;
         top: 0%; 
         width: 100%; 
       }
@@ -161,18 +174,20 @@
           position: relative;
           margin: auto;
           padding: 30px 0px 30px 0px; 
+          width: 85%; 
+          text-shadow: 1px 1px #000000; 
       }
       
       .contactform{
-          width: 95%; 
-          margin: auto; 
-          background:rgba(53,50,50, 0.75); 
-          padding: 0px 2.5px 20px 2.5px; 
+          width: 85%; 
+          margin: 15px auto 0px auto; 
+          background:rgba(0, 0, 0, 0.5); 
+          padding: 0px 2.5px 10px 2.5px; 
       }
 
       .in{
           width: 96%; 
-          padding: 10px 0px 10px 0px; 
+          padding: 10px 0px 10px 5px; 
           margin: 0px auto 10px auto; 
           display: block;
           border: none; 
@@ -230,7 +245,7 @@
           position: relative;
           text-align: center; 
           margin: 20px auto 20px auto; 
-          width: 30%; 
+          width: 125px; 
       }
 
       .show-more-work{
@@ -240,16 +255,20 @@
         opacity: 0.65;
         height: 115%; 
         position: absolute;
-        width: 120%;
+        width: 100%;
         top: -10%;
-        left: -10%;
+        left: 0%;
       }
 
       .trans-work-text{
         font-family: Avenir Next Bold, Avenir, sans-serif;
         color: #fbfbfb; 
-        font-size: 1.1em;
+        font-size: 1em;
         position: relative;
+      }
+
+      .ourclientstitle{
+        font-size: 1.75em;
       }
       
       .clientlinks{
@@ -265,28 +284,8 @@
       .client-image {
           align-self: center;
           position: relative;  
-          width: 100px;  
-          margin: 10px 0px 10px 0px;   
-      }
-
-      .client-seven{
-          width: 150px;
-      }
-
-      .client-eight{
-          width: 150px; 
-      }
-
-      .client-nine{
-          width: 150px;
-      }
-
-      .client-ten{
-          width: 150px; 
-      }
-
-      .logo-client{
-          
+          height: 32px;  
+          margin: 10px 15px 10px 15px;   
       }
 
       .blurb{
@@ -305,6 +304,10 @@
           margin: auto;
       }
 
+      .subtitle{
+          font-family: Avenir Next Bold, sans-serif; 
+      }
+
       .blurbtext{
           padding: 0px 0px 10px 0px; 
       }
@@ -316,6 +319,7 @@
 
       .whoweare .title{
         color: white;
+        font-size: 1.75em; 
     }
 
       .testimonial{
@@ -325,6 +329,12 @@
 
       .testimonial .title{
         color: #fbfbfb; 
+        font-size: 1.75em; 
+    }
+
+    .testimonial .sectitle{
+        color: #fbfbfb; 
+        font-size: 1.75em;
     }
 
     .attribution{
@@ -338,6 +348,8 @@
       .foot{
         background: #72c267;
         font-size: 0.65em;
+        padding: 20px 0px 0px 0px; 
+        line-height: 16px; 
       }
 
       .socialicons{
@@ -362,18 +374,23 @@
           display: inline-block;
           vertical-align: top;
           font-family: Avenir Next, sans-serif;
+          line-height: 18px; 
       }
 
       .footerlinks{
-          width: 40%; 
+          width: 48%; 
           display: inline-block;
           font-family: Avenir, sans-serif;
           float: right;
       }
 
       .aboutuslinks{
-        width: 40%; 
+        width: 50%; 
         display: inline-block;
+      }
+
+      .aboutuslinks li{
+          margin-bottom: 3px; 
       }
 
       .contactuslinks{
@@ -383,20 +400,29 @@
           float: right;
       }
 
+      .contactuslinks li{
+          margin-bottom: 3px; 
+      }
+
       .copyrightarea{
           background: #fbfbfb;
           text-align: center; 
           padding: 10px 0px 10px 0px; 
+          font-family: Avenir Next, sans-serif; 
       }
 
 @media screen and (min-width: 479px){
 
     .carousel{
-        height: 275px; 
+        height: 375px; 
     }
 
     .slide{
-        height: 275px; 
+        height: 375px; 
+    }
+
+    .carouseltext{
+        font-size: 1.2em; 
     }
 
     .porttitle{
@@ -422,23 +448,11 @@
     }
 
     .client-image{
-        width: 150px; 
+        height: 42px; 
     }
 
-    .client-seven{
-        width: 200px;
-    }
-
-    .client-eight{
-        width: 200px; 
-    }
-
-    .client-nine{
-        width: 200px;
-    }
-
-    .client-ten{
-        width: 200px; 
+    .foot{
+        font-size: 0.85em; 
     }
 }
 
@@ -451,16 +465,24 @@
     .desktop{
         display: inherit;
     }
+    
+    .top-nav{
+        height: 100px; 
+    }
 
     .main-navigation{
         margin: 0px 15px  0px 0px; 
+    }
+
+    .laslogo{
+        height: 72px;
     }
 
     .desktop-main-menu-container ul li{
         float: left; 
         color: #fffefe;
         font-family: Avenir, sans-serif; 
-        font-size: 0.8em; 
+        font-size: 0.85em; 
         margin: 0px 10px 0px 0px; 
         position: relative; 
     }
@@ -484,22 +506,23 @@
     .desktop-main-menu-container ul li:hover ul{
         display: block; 
         position: absolute; 
-        background: rgb(194,192,190,0.6);
-        width: 150px; 
+        background: rgb(234,236,234,0.75);
+        width: 200px; 
         top: 5%; 
-        padding: 25px 0px 15px 5px; 
+        left: -10%; 
+        padding: 36px 0px 15px 5px; 
         z-index: -1; 
     }
 
     .desktop-main-menu-container ul li ul li{
-        padding: 2.5px 0px 2.5px 0px; 
+        padding: 2.5px 0px 2.5px 10px; 
         background: #fffefe; 
         margin: 0px 0px 5px 0px; 
-        color: black; 
+        color: rgb(100, 98, 98); 
         font-family: Avenir Next, sans-serif; 
         position: relative; 
         left: -5px; 
-        width: 150px;
+        width: 200px;
     }
 
     .desktop-main-menu-container ul li ul li:last-child{
@@ -514,30 +537,48 @@
        
     }
 
+    .carouseltext{
+        font-size: 1.35em; 
+    }
+
+    .carousel{
+        height: 400px; 
+    }
+
+    .slide{
+        height: 400px;
+    }
+
     .contactustop{
-        width: 15%; 
+        width: 140px; 
+        font-size: 1.2em; 
+        padding: 2px 0px 2px 0px; 
     }
 
     .contactdfrontback{
-        height: 325px; 
+        height: 400px; 
         display: flex; 
+        background-size: cover;
     }
 
     .contactfronttext{
         width: 60%; 
         display: inline-block; 
+        font-size: 1.65em; 
+        text-shadow: 2px 2px #000000; 
     }
 
     .contactform{
-        width: 30%;
+        width: 250px;
         float: right; 
         display: inline-block;
-        margin: 10px 20px 10px 20px; 
+        margin: 86px 35px 60px 20px;
         border-radius: 12px; 
     }
 
     .in{
         width: 80%; 
+        border-radius: 30px; 
     }
 
     .portfolio .title{
@@ -552,33 +593,21 @@
 
     .card{
         border: none;
-        width: 100px;   
+        width: 110px;   
     }
 
     .trans-btn-container{
-        width: 16%; 
+        width: 140px;
+        padding: 2px 0px 2px 0px;
+        margin: 36px auto 38px auto;   
     }
 
-
+    .testimonial .trans-btn-container{
+        margin: 12px auto 0px auto; 
+    }
 
     .client-image{
-        width: 200px; 
-    }
-
-    .client-seven{
-        width: 300px;
-    }
-
-    .client-eight{
-        width: 300px; 
-    }
-
-    .client-nine{
-        width: 300px;
-    }
-
-    .client-ten{
-        width: 300px; 
+        height: 50px; 
     }
 
     .whoweare{
@@ -588,6 +617,7 @@
 
     .whoweare .title {
         width: 100%; 
+        margin: 20px 0px 32px 0px; 
     }
 
     .blurb{ 
@@ -605,19 +635,122 @@
 
     .testimonial .title{
         width:  100%; 
+        margin: 20px 0px 32px 0px; 
+    }
+
+    .testimonial .sectitle{
+        width:  100%; 
+        margin: 0px; 
     }
 
     .socialicons{
         float: right;
         text-align: right;
         padding: 10px 20px 10px 0px; 
-        width: 50%; 
+        width: 39%; 
     }
 
     .footerinfo{
-        width: 50%; 
-        margin: 0px 0px 0px 5px; 
+        width: 59%; 
+        margin: 0px 0px 0px 35px; 
         padding: 10px 0px 10px 0px; 
     }
+
+    .footeraddress{
+        margin: -7px 0px 0px 0px; 
+        line-height: 27px; 
+    }
+
+    .aboutuslinks{
+        width: 60%; 
+        display: inline-block;
+      }
+
+    .aboutuslinks li{
+        margin-bottom: 12px; 
+    }
+
+      .contactuslinks{
+          width: 36%; 
+      }
+
+    .contactuslinks li{
+        margin-bottom: 12px; 
+    }
 }
-      
+
+@media screen and (min-width: 921px){
+
+    .desktop-main-menu-container ul li{
+        font-size: 1em; 
+    }
+
+    .carouseltext{
+        font-size: 1.5em; 
+    }
+
+    .client-image{
+        height: 54px; 
+    }
+
+    .footerinfo{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1025px){
+    .client-image{
+        height: 58px;
+        margin: 16px 30px 16px 30px; 
+    }
+}
+
+@media screen and (min-width: 1201px){
+
+    .laslogo{
+        height: 90px;
+    }
+
+    .desktop-main-menu-container ul li{
+        font-size: 1.2em; 
+    }
+
+    .carouseltext{
+        font-size: 1.5em; 
+    }
+
+    .top-nav{
+        height: 116px;
+    }
+
+    .desktop-main-menu-container ul li{
+        margin: 0px 15px 0px 0px; 
+    }
+
+    .contactdfrontback{
+        height: 476px;
+    }
+
+    .contactform{
+        margin: 86px 35px 125px 20px;
+    }
+
+    .carousel{
+        height: 476px;
+    }
+
+    .slide{
+        height: 476px;
+    }
+
+    .client-image{
+        height: 60px;
+        margin: 16px 66px 16px 66px; 
+    }
+
+    .footerinfo{
+        width: 39%;
+    }
+
+}

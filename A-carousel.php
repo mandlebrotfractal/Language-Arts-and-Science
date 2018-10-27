@@ -7,7 +7,7 @@
     <p class="carouseltext">We're reducing translation costs and improving quality thru people and technology.</p>
     </div>
     <div class="slide carouselthree" id="carouselthree">
-    <p class="carouseltext">We translate all thingg Legal, Marketing, HR, Sales, and Service.</p>
+    <p class="carouseltext">We translate all things Legal, Marketing, HR, Sales, and Service.</p>
     </div>
     <div class="contactustop" id="contactustop">
         <p class="contactustoptext">Contact Us</p>
