@@ -3,10 +3,6 @@
         display: none;
     }
 
-    .tablet{
-        display: none; 
-    }
-
     .title {
         text-align: center;
         font-family: Avenir Next, sans-serif; 
@@ -134,7 +130,7 @@
       .contacttitle{
           color: #fffefe;
           font-size: 1.2em; 
-          padding: 25px 0px 15px 0px; 
+          padding: 5px 0px 6px 0px; 
           font-family: Avenir Next, sans-serif; 
       }
 
@@ -185,7 +181,7 @@
       .contactform{
           width: 85%; 
           margin: 15px auto 0px auto; 
-          background:rgba(0, 0, 0, 0.65); 
+          background:rgba(0, 0, 0, 0.5); 
           padding: 0px 2.5px 10px 2.5px; 
       }
 
@@ -207,7 +203,7 @@
           font-size: 1em; 
           margin: 20px auto 0px auto;
           border-radius: 15px; 
-          padding: 5px 36px 5px 36px; 
+          padding: 5px 15px 5px 15px; 
       }
     
       .porttitle{
@@ -220,7 +216,7 @@
           text-align: center;
           font-family: Avenir Next, sans-serif; 
           color: #fbfbfb;
-          font-size: 1.25em; 
+          font-size: 1.1em; 
           margin: 10px 0px 10px 0px; 
       }
 
@@ -267,13 +263,12 @@
       .trans-work-text{
         font-family: Avenir Next Bold, Avenir, sans-serif;
         color: #fbfbfb; 
-        font-size: 0.9em;
+        font-size: 1em;
         position: relative;
       }
 
       .ourclientstitle{
         font-size: 1.75em;
-        padding: 35px 0px 25px 0px; 
       }
       
       .clientlinks{
@@ -284,14 +279,13 @@
           flex-wrap: wrap;
           margin: auto; 
           width: 90%; 
-          margin: 0px auto 20px auto; 
       }
 
       .client-image {
           align-self: center;
           position: relative;  
           height: 32px;  
-          margin: 10px 15px 15px 15px;   
+          margin: 10px 15px 10px 15px;   
       }
 
       .blurb{
@@ -307,17 +301,15 @@
 
       .blurbtcon{
           width: 90%; 
-          margin: auto; 
+          margin: auto;
       }
 
       .subtitle{
           font-family: Avenir Next Bold, sans-serif; 
-          margin: 15px 0px 0px 0px;
       }
 
       .blurbtext{
           padding: 0px 0px 10px 0px; 
-          line-height: 1.25; 
       }
 
       .whoweare{
@@ -343,10 +335,6 @@
     .testimonial .sectitle{
         color: #fbfbfb; 
         font-size: 1.75em;
-    }
-
-    .testimonial .blurb{
-        padding: 25px 0px 36px 0px;
     }
 
     .attribution{
@@ -390,7 +378,7 @@
       }
 
       .footerlinks{
-          width: 48%; 
+          width: 49%; 
           display: inline-block;
           font-family: Avenir, sans-serif;
           float: right;
@@ -424,10 +412,6 @@
       }
 
 @media screen and (min-width: 479px){
-
-    .tablet{
-        display: inherit;
-    }
 
     .carousel{
         height: 375px; 
@@ -478,10 +462,6 @@
         display: none; 
     }
 
-    .tablet{
-        display: none;
-    }
-
     .desktop{
         display: inherit;
     }
@@ -501,19 +481,17 @@
     .desktop-main-menu-container ul li{
         float: left; 
         color: #fffefe;
-        font-family: Avenir Next, sans-serif; 
-        font-size: 0.6em; 
+        font-family: Avenir, sans-serif; 
+        font-size: 0.85em; 
         margin: 0px 10px 0px 0px; 
         position: relative; 
     }
 
     .desktop-main-menu-container ul li:last-child{
-        padding: 5px 30px 5px 30px; 
+        padding: 0px 10px 0px 10px; 
         border-radius: 15px; 
         background: #fffefe;  
         color: black; 
-        margin: -5px 15px 0px 10px; 
-        font-family: Avenir Next Bold, sans-serif; 
     }
 
     .desktop-main-menu-container ul li ul{
@@ -528,8 +506,8 @@
     .desktop-main-menu-container ul li:hover ul{
         display: block; 
         position: absolute; 
-        background: rgba(234,236,234,0.75);
-        width: 250px; 
+        background: rgb(234,236,234,0.75);
+        width: 200px; 
         top: 5%; 
         left: -10%; 
         padding: 36px 0px 15px 5px; 
@@ -544,16 +522,13 @@
         font-family: Avenir Next, sans-serif; 
         position: relative; 
         left: -5px; 
-        width: 250px;
+        width: 200px;
     }
 
     .desktop-main-menu-container ul li ul li:last-child{
         padding: 0px 10px 0px 10px; 
         border-radius: 0px; 
         background: #fffefe;  
-        color: rgb(100, 98, 98);
-        margin: 0px 0px 5px 0px;
-        font-family: Avenir Next, sans-serif; 
     }
 
     .main-menu{
@@ -597,7 +572,7 @@
         width: 250px;
         float: right; 
         display: inline-block;
-        margin: 86px 35px 25px 20px;
+        margin: 86px 35px 60px 20px;
         border-radius: 12px; 
     }
 
@@ -607,7 +582,7 @@
     }
 
     .portfolio .title{
-      padding: 30px 0px 20px 0px;
+      padding: 15px 0px 0px 0px;
       border: none;  
     }
 
@@ -651,14 +626,6 @@
 
     .blurb img{
         height: 100px; 
-    }
-
-    .blurbtcon{
-        position: relative;
-        transform: translate(-50%, -50%); 
-        top: 50%; 
-        left: 50%;
-        margin: 0px 0px 0px 0px; 
     }
 
     .testimonial{
@@ -710,48 +677,16 @@
     .contactuslinks li{
         margin-bottom: 12px; 
     }
-
-    
-}
-
-@media screen and (min-width: 852px){
-    .desktop-main-menu-container ul li{
-        font-size: 0.7em; 
-    }
 }
 
 @media screen and (min-width: 921px){
 
-    .top-nav{
-        height: 125px;
-    }
-
-    .laslogo{
-        height: 100px;
-    }
-
     .desktop-main-menu-container ul li{
-        font-size: 0.72em; 
+        font-size: 1em; 
     }
 
-    .carousel{
-        height: 500px;
-    }
-
-    .slide{
-        height: 500px;
-    }
-
-    .contactdfrontback{
-        height: 500px;
-    }
-    
     .carouseltext{
         font-size: 1.5em; 
-    }
-
-    .contactform{
-        margin: 86px 35px 120px 20px;
     }
 
     .client-image{
@@ -769,28 +704,24 @@
         height: 58px;
         margin: 16px 30px 16px 30px; 
     }
-
-    .desktop-main-menu-container ul li{
-        font-size: 0.8em
-    }
 }
 
 @media screen and (min-width: 1201px){
 
-    .top-nav{
-        height: 160px; 
-    }
-
     .laslogo{
-        height: 124px;
+        height: 90px;
     }
 
     .desktop-main-menu-container ul li{
-        font-size: 0.9em; 
+        font-size: 1.2em; 
     }
 
     .carouseltext{
         font-size: 1.5em; 
+    }
+
+    .top-nav{
+        height: 116px;
     }
 
     .desktop-main-menu-container ul li{
@@ -798,7 +729,7 @@
     }
 
     .contactdfrontback{
-        height: 500px;
+        height: 476px;
     }
 
     .contactform{

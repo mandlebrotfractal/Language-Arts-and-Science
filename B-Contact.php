@@ -52,7 +52,7 @@ las_deliver_mail();
             <input class="in" name="email" for="email" placeholder="EMAIL:" value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
     onchange="try{setCustomValidity('')}catch(e){}">
             <input class="in" name="question" for="question" placeholder="QUESTION:" value="">
-            <input class="btn contactsubmit" type="submit" name="submit" value="Submit">
+            <input class="btn contactsubmit" type="submit" name="submit" value="SUBMIT">
         </form>
     </div>
 </section>

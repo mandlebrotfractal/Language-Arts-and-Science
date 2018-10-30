@@ -16,17 +16,17 @@
     </div>
     <div class="footerlinks clearfix" id="footerlinks">
         <ul class="aboutuslinks">
-            <li><p>Home</p></li>
-            <li><p>About</p></li>
-            <li><p>Translation Sevices</p></li>
-            <li><p>Interpreter Services</p></li>
-            <li><p>Industries</p></li>
+            <li><p>HOME</p></li>
+            <li><p>ABOUT</p></li>
+            <li><p>TRANSLATION SERVICES</p></li>
+            <li><p>INTERPRETER SERVICES</p></li>
+            <li><p>INDUSTIRES</p></li>
         </ul>
         <ul class="contactuslinks">
-            <li><p>Pricing</p></li>
-            <li><p>Get A Quote</p></li>
-            <li><p>Blog</p></li>
-            <li><p>Contact Us</p></li>
+            <li><p>PRICING</p></li>
+            <li><p>GET A QUOTE</p></li>
+            <li><p>BLOG</p></li>
+            <li><p>CONTACT US</p></li>
     </div>
 </div>
     <div class="copyrightarea" id="copyrightarea">
