@@ -41,7 +41,7 @@ las_deliver_mail();
 
 <section class="contactfront" id="contactfront">
     <div class="contactdfrontback" id=contactfrontback">
-        <p class="contactfronttext">We're a reliable translation company that you can count on.</p>
+        <div class="contactfronttext"><p>We're a reliable translation company</p><p>that you can count on.</p></div>
         <form class="contactform" id="contactform" action="<?echo $_SERVER['PHP_SELF']; ?>" method="post">
             <p class="title contacttitle">CONTACT US:</p>
             <input type="hidden" name="uniqueid" value="<?php echo uniqid();?>">
@@ -51,7 +51,7 @@ las_deliver_mail();
     onchange="try{setCustomValidity('')}catch(e){}" value="">
             <input class="in" name="email" for="email" placeholder="EMAIL:" value="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" oninvalid="setCustomValidity('Please enter valid email.')"
     onchange="try{setCustomValidity('')}catch(e){}">
-            <input class="in" name="question" for="question" placeholder="QUESTION:" value="">
+            <input class="in" name="question" for="question" placeholder="HOW CAN WE HELP:" value="">
             <input class="btn contactsubmit" type="submit" name="submit" value="SUBMIT">
         </form>
     </div>

@@ -22,13 +22,13 @@
             <img class="portimg" src="<?php bloginfo('template_url');?>/images/gavel.png" width="145px" height="auto">
             <p class="porttext">LEGAL</p>
         </div>
-        <div class="card ourwork tablet">
+        <div class="card ourwork mobile">
             <img class="portimg" src="<?php bloginfo('template_url');?>/images/lightbulb.png" width="115px" height="auto">
             <p class="porttext">SEE OUR WORK</p>
         </div>
         
     </div>
-    <div class="trans-btn-container">
+    <div class="trans-btn-container desktop">
             <div class="show-more-work" id="showMoreWord">
                 
             </div>

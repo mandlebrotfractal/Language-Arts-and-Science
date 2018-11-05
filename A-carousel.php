@@ -1,13 +1,13 @@
 <section class="carousel" id="carousel">
     <div class="carouselleft" id="carouselleft"></div>
     <div class="slide carouselone" id=carouselone">
-        <p class="carouseltext">We're a reliable translation company that you can count on.</p>
+        <div class="carouseltext"><p>We're a reliable translation company</p><p> that you can count on.</p></div>
     </div>
     <div class="slide carouseltwo" id="carouseltwo">
-    <p class="carouseltext">We're reducing translation costs and improving quality thru people and technology.</p>
+        <div class="carouseltext"><p>We're reducing translation costs and </p><p> improving quality thru people and technology.</p></div>
     </div>
     <div class="slide carouselthree" id="carouselthree">
-    <p class="carouseltext">We translate all things Legal, Marketing, HR, Sales, and Service.</p>
+        <div class="carouseltext"><p>We translate all things Legal, Marketing, </p><p> HR, Sales, and Service.</p></div>
     </div>
     <div class="contactustop" id="contactustop">
         <p class="contactustoptext">Contact Us</p>

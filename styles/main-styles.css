@@ -1,25 +1,33 @@
-
+/*General CSS for Titles and and displays*/
+    
     .desktop{
         display: none;
     }
 
-    .tablet{
-        display: none; 
-    }
-
     .title {
         text-align: center;
-        font-family: Avenir Next, sans-serif; 
+        font-family: Avenir Next Light, sans-serif; 
         font-size: 2.2em; 
         padding: 20px 0px 15px 0px;  
     }
 
     .sectitle{
         text-align: center;
-        font-family: Avenir Next, sans-serif; 
+        font-family: Avenir Next Light, sans-serif; 
         font-size: 2.2em; 
         padding: 20px 0px 15px 0px;
     }
+
+    .in{
+        width: 96%; 
+        padding: 10px 0px 10px 5px; 
+        margin: 0px auto 10px auto; 
+        display: block;
+        border: none; 
+        border-radius: 10px; 
+    }
+
+/*Top Nave for Mobile*/
 
     .top-nav{
         background: #f5930b;
@@ -29,7 +37,6 @@
         align-items: center;
     }
       
-    
     .laslogo {
         margin: 15px 0px 10px 5%;
         height: 58px; 
@@ -53,8 +60,6 @@
           font-family: Avenir Next Bold, Avenir, sans-serif;
       }
       
-      
-
       .bar-menu{
         display: inline-block;
         cursor: pointer;
@@ -62,12 +67,13 @@
       }
       
       .bar{
-    
         width: 100%;
         height: 3px;
         background: #fbd49d;
         margin: 4px 0px 4px 0px;
       }
+    
+/*CSS for Carousel in general*/
 
       .slide{
           width: 100%; 
@@ -153,11 +159,13 @@
       }
 
       .carouselthree{
-        background-image: linear-gradient(rgba(0,84,153,0.75), rgba(0,84,153,0.75)), url(../images/facesextract.png);
-        background-size: 100% 100%;
+        background-image: linear-gradient(rgba(0,84,153,0.75), rgba(0,84,153,0.75)), url(../images/facesnew.png);
+        background-size: cover;
         top: 0%; 
         transform:translate(200%, 0%);
       }
+
+/*CSS for contact form in general*/
 
       .contactfront{
           position: relative; 
@@ -174,7 +182,7 @@
           text-align: center;
           font-family: Avenir Next, sans-serif;
           color: #fbfbfb;
-          font-size: 1.1em; 
+          font-size: 1.2em; 
           position: relative;
           margin: auto;
           padding: 30px 0px 30px 0px; 
@@ -189,16 +197,6 @@
           padding: 0px 2.5px 10px 2.5px; 
       }
 
-      .in{
-          width: 96%; 
-          padding: 10px 0px 10px 5px; 
-          margin: 0px auto 10px auto; 
-          display: block;
-          border: none; 
-          border-radius: 10px; 
-
-      }
-
       .contactsubmit{
           background: rgba(160,160,160, 0.5);
           color: #fbfbfb; 
@@ -209,18 +207,21 @@
           border-radius: 15px; 
           padding: 5px 36px 5px 36px; 
       }
+
+/*CSS for portfolio in Mobile*/
     
       .porttitle{
           border-bottom: 1px solid #3C3C3C;
-          margin-bottom: 10px; 
+          margin-bottom: 0px; 
           color: #fbfbfb;
+          font-size: 2.5em; 
       }
 
       .porttext{
           text-align: center;
-          font-family: Avenir Next, sans-serif; 
+          font-family: Avenir Next Light, sans-serif; 
           color: #fbfbfb;
-          font-size: 1.25em; 
+          font-size: 1.4em; 
           margin: 10px 0px 10px 0px; 
       }
 
@@ -231,7 +232,7 @@
 
       .portfolio{
           background: #72c267;
-          padding: 0px 0px 20px 0px; 
+          padding: 0px 0px 0px 0px; 
       }
 
       .portlinks{
@@ -239,17 +240,34 @@
         flex-flow: row wrap;
       }
 
+      
       .card{
-          width: 100%;
-          border-bottom: 1px solid #3C3C3C;
-          margin-bottom: 10px; 
-      }
+        width: 50%; 
+        border: 1px solid #3C3C3C;
+        padding: 10px; 
+        display: flex; 
+        flex-flow: column;
+        align-items: center; 
+        margin: 0px; 
+    }
+
+
+      .card:nth-child(odd){
+        border-left: none; 
+    }
+
+      .card:nth-child(even){
+        border-right: none; 
+    }
+
+/*CSS for body buttons at end of sections*/
 
       .trans-btn-container{
-          position: relative;
-          text-align: center; 
-          margin: 20px auto 20px auto; 
-          width: 125px; 
+        position: relative;
+        text-align: center; 
+        margin: 20px auto 20px auto; 
+        width: 150px; 
+        padding: 3px 0px 3px 0px;
       }
 
       .show-more-work{
@@ -269,10 +287,13 @@
         color: #fbfbfb; 
         font-size: 0.9em;
         position: relative;
+        letter-spacing: 2px; 
       }
 
+/*Our clients section CSS in general*/
+
       .ourclientstitle{
-        font-size: 1.75em;
+        font-size: 2em;
         padding: 35px 0px 25px 0px; 
       }
       
@@ -282,17 +303,21 @@
           justify-content: space-around;
           align-items: center;  
           flex-wrap: wrap;
-          margin: auto; 
-          width: 90%; 
           margin: 0px auto 20px auto; 
       }
 
       .client-image {
           align-self: center;
           position: relative;  
-          height: 32px;  
-          margin: 10px 15px 15px 15px;   
+          width: 90%; 
+          margin: 10px auto 0px auto;   
       }
+
+      .logo-client{
+          margin: 0px auto 0px auto; 
+      }
+
+/*General CSS for testimonial and Who We Are Sections*/
 
       .blurb{
           width: 80%; 
@@ -311,7 +336,7 @@
       }
 
       .subtitle{
-          font-family: Avenir Next Bold, sans-serif; 
+          font-family: Avenir Next DemiBold, sans-serif; 
           margin: 15px 0px 0px 0px;
       }
 
@@ -320,6 +345,8 @@
           line-height: 1.25; 
       }
 
+/* Who we are section CSS*/
+
       .whoweare{
         background: #72c267;
         padding: 0px 0px 25px 0px;
@@ -327,8 +354,10 @@
 
       .whoweare .title{
         color: white;
-        font-size: 1.75em; 
+        font-size: 2em; 
     }
+
+/*Testimonial section general CSS*/
 
       .testimonial{
           background: #1068ad; 
@@ -337,25 +366,30 @@
 
       .testimonial .title{
         color: #fbfbfb; 
-        font-size: 1.75em; 
+        font-size: 2em; 
     }
 
-    .testimonial .sectitle{
+      .testimonial .sectitle{
         color: #fbfbfb; 
         font-size: 1.75em;
     }
 
-    .testimonial .blurb{
-        padding: 25px 0px 36px 0px;
+      .testimonial .blurb{
+        padding: 20px 0px 0px 0px;
+        height: 225px;
     }
 
-    .attribution{
+      .attribution{
+        font-family: Avenir Next DemiBold, sans-serif; 
         font-size: 1.4em; 
     }
 
-    .personaltitle{
-        font-size: 1.15em;
+      .personaltitle{
+        font-family: Avenir Next DemiBold, sans-serif; 
+        font-size: 1.1em;
     }
+
+/*Footer section mobile CSS*/
       
       .foot{
         background: #72c267;
@@ -425,9 +459,7 @@
 
 @media screen and (min-width: 479px){
 
-    .tablet{
-        display: inherit;
-    }
+/*Changes for 479px sizes and above*/
 
     .carousel{
         height: 375px; 
@@ -441,30 +473,25 @@
         font-size: 1.2em; 
     }
 
-    .porttitle{
-        margin-bottom: 0px; 
+    .contactfronttext{
+        font-size: 1.5em; 
     }
 
-    .card{
-        width: 50%; 
-        border: 1px solid #3C3C3C;
-        padding: 10px; 
-        display: flex; 
-        flex-flow: column;
-        align-items: center; 
-        margin: 0px; 
+    .ourclientstitle{
+        font-size: 2.5em; 
     }
 
-    .card:nth-child(odd){
-        border-left: none; 
+    .whoweare .title{
+        font-size: 2.5em; 
     }
 
-    .card:nth-child(even){
-        border-right: none; 
+    .testimonial .title{
+        font-size: 2.5em; 
     }
 
-    .client-image{
-        height: 42px; 
+    .testimonial .blurb{
+        padding: 40px 0px 0px 0px;
+        height: 200px;
     }
 
     .foot{
@@ -472,14 +499,18 @@
     }
 }
 
+@media screen and (min-width: 579px){
+    
+    .carouseltext{
+        font-size: 1.35em; 
+    }
+
+}
+
 @media screen and (min-width: 768px){
   
     .mobile{
         display: none; 
-    }
-
-    .tablet{
-        display: none;
     }
 
     .desktop{
@@ -500,19 +531,19 @@
 
     .desktop-main-menu-container ul li{
         float: left; 
-        color: #fffefe;
+        color: #ffffff;
         font-family: Avenir Next, sans-serif; 
-        font-size: 0.6em; 
+        font-size: 0.50em; 
         margin: 0px 10px 0px 0px; 
         position: relative; 
     }
 
     .desktop-main-menu-container ul li:last-child{
-        padding: 5px 30px 5px 30px; 
+        padding: 5px 30px 3px 30px; 
         border-radius: 15px; 
         background: #fffefe;  
         color: black; 
-        margin: -5px 15px 0px 10px; 
+        margin: -5px 10px 0px 5px; 
         font-family: Avenir Next Bold, sans-serif; 
     }
 
@@ -563,7 +594,7 @@
     }
 
     .carouseltext{
-        font-size: 1.35em; 
+        font-size: 1.65em; 
     }
 
     .carousel{
@@ -611,6 +642,18 @@
       border: none;  
     }
 
+    .porttitle{
+        font-size: 2.5em; 
+    }
+
+    .porttext{
+        font-size: 1.2em; 
+    }
+    
+    .portfolio{
+        padding: 0px 0px 30px 0px; 
+    }
+
     .portlinks{
         flex-flow: nowrap; 
         justify-content: space-around;
@@ -618,21 +661,31 @@
 
     .card{
         border: none;
-        width: 110px;   
+        width: 155px;   
     }
 
     .trans-btn-container{
-        width: 140px;
+        width: 160px;
         padding: 2px 0px 2px 0px;
         margin: 36px auto 38px auto;   
+    }
+
+    .testimonial .blurb{
+        height: 300px; 
+        padding: 25px 0px 36px 0px;
+    }
+
+    .testimonial .sectitle{
+        font-size: 2.7em;
     }
 
     .testimonial .trans-btn-container{
         margin: 12px auto 0px auto; 
     }
 
-    .client-image{
-        height: 50px; 
+    .ourclientstitle{
+        font-size: 2.5em; 
+        padding: 35px 0px 0px 0px; 
     }
 
     .whoweare{
@@ -643,6 +696,7 @@
     .whoweare .title {
         width: 100%; 
         margin: 20px 0px 32px 0px; 
+        font-size: 2.7em; 
     }
 
     .blurb{ 
@@ -669,6 +723,7 @@
     .testimonial .title{
         width:  100%; 
         margin: 20px 0px 32px 0px; 
+        font-size: 2.7em; 
     }
 
     .testimonial .sectitle{
@@ -716,8 +771,34 @@
 
 @media screen and (min-width: 852px){
     .desktop-main-menu-container ul li{
-        font-size: 0.7em; 
+        font-size: 0.60em; 
     }
+
+    .contactfronttext{
+        font-size: 1.85em; 
+    }
+
+    .carouseltext{
+        font-size: 1.85em; 
+    }
+
+    .carousel{
+        height: 450px;
+    }
+
+    .slide{
+        height: 450px;
+    }
+
+    .contactdfrontback{
+        height: 450px;
+    }
+
+    .contactform{
+        margin: 86px 35px 65px 20px;
+    }
+
+    
 }
 
 @media screen and (min-width: 921px){
@@ -731,7 +812,7 @@
     }
 
     .desktop-main-menu-container ul li{
-        font-size: 0.72em; 
+        font-size: 0.68em; 
     }
 
     .carousel{
@@ -745,17 +826,17 @@
     .contactdfrontback{
         height: 500px;
     }
+
+    .contactfronttext{
+        font-size: 2.05em; 
+    }
     
     .carouseltext{
-        font-size: 1.5em; 
+        font-size: 2em; 
     }
 
     .contactform{
         margin: 86px 35px 120px 20px;
-    }
-
-    .client-image{
-        height: 54px; 
     }
 
     .footerinfo{
@@ -765,13 +846,61 @@
 }
 
 @media screen and (min-width: 1025px){
-    .client-image{
-        height: 58px;
-        margin: 16px 30px 16px 30px; 
-    }
 
     .desktop-main-menu-container ul li{
         font-size: 0.8em
+    }
+
+    .carousel{
+        height: 550px;
+    }
+
+    .slide{
+        height: 550px;
+    }
+
+    .contactdfrontback{
+        height: 550px;
+    }
+
+    .contactfronttext{
+        font-size: 2.25em; 
+    }
+
+    .contactform{
+        margin: 86px 35px 165px 20px;
+    }
+
+    .carouseltext{
+        font-size: 2.2em; 
+    }
+
+    .card{
+        width: 200px; 
+    }
+
+    .porttitle{
+        font-size: 3.3em; 
+    }
+
+    .porttext{
+        font-size: 1.5em; 
+    }
+
+    .trans-btn-container{
+        width: 180px; 
+    }
+
+    .trans-work-text{
+        font-size: 1.1em; 
+    }
+
+    .blurb{
+        width: 25%; 
+    }
+
+    .testimonial{
+        padding: 0px 0px 40px 0px; 
     }
 }
 
@@ -789,8 +918,12 @@
         font-size: 0.9em; 
     }
 
-    .carouseltext{
-        font-size: 1.5em; 
+    .desktop-main-menu-container ul li:hover ul{
+        width: 300px; 
+    }
+
+    .desktop-main-menu-container ul li ul li{
+        width: 300px; 
     }
 
     .desktop-main-menu-container ul li{
@@ -798,28 +931,95 @@
     }
 
     .contactdfrontback{
-        height: 500px;
+        height: 575px;
+    }
+
+    .contactfronttext{
+        font-size: 2.65em; 
     }
 
     .contactform{
-        margin: 86px 35px 125px 20px;
+        margin: 86px 35px 185px 20px;
+    }
+
+    .carouseltext{
+        font-size: 2.4em; 
     }
 
     .carousel{
-        height: 476px;
+        height: 575px;
     }
 
     .slide{
-        height: 476px;
-    }
-
-    .client-image{
-        height: 60px;
-        margin: 16px 66px 16px 66px; 
+        height: 575px;
     }
 
     .footerinfo{
         width: 49%;
+    }
+
+}
+
+@media screen and (min-width: 1350px){
+
+    .slide{
+        height: 650px; 
+    }
+
+    .carousel{
+        height: 650px;
+    }
+
+    .contactdfrontback{
+        height: 650px;
+    }
+
+    .carouseltext{
+        font-size: 2.75em; 
+    }
+
+    .contactfronttext{
+        font-size: 2.75em; 
+    }
+
+    .desktop-main-menu-container ul li {
+        font-size: 1em; 
+    }
+
+    .contactform{
+        margin: 86px 35px 250px 20px; 
+    }
+
+}
+
+@media screen and (min-width: 1500px){
+
+    .slide{
+        height: 750px; 
+    }
+
+    .carousel{
+        height: 750px;
+    }
+
+    .contactdfrontback{
+        height: 750px;
+    }
+
+    .carouseltext{
+        font-size: 3em; 
+    }
+
+    .contactfronttext{
+        font-size: 3em; 
+    }
+
+    .desktop-main-menu-container ul li {
+        font-size: 1.2em; 
+    }
+
+    .contactform{
+        margin: 176px 35px 265px 20px; 
     }
 
 }

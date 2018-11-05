@@ -20,7 +20,7 @@
             <p class="attribution">-Glen Hilzinger</p>
         </div>
     </div> 
-    <p class="sectitle">Need Some Help?</p>
+    <p class="sectitle">Need some help?</p>
     <div class="trans-btn-container">
         <div class="show-more-work" id="showMoreWord">
                 
