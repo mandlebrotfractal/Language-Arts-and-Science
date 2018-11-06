@@ -6,12 +6,12 @@
 </div>
 <div class="footerinfo clearfix" id="footerinfo">
     <div class="footeraddress">
-        <strong>Language Arts and Sciences</strong>
+        <strong>Language Arts and Science</strong>
         <address>
             1115 North Old Woodward Avenue<br>
             Suite 73<br>
             Birmingham, MI 48009<br>
-            800-705-8944
+            888-705-8944
         </address>
     </div>
     <div class="footerlinks clearfix" id="footerlinks">
@@ -30,7 +30,7 @@
     </div>
 </div>
     <div class="copyrightarea" id="copyrightarea">
-        Copyright Language Arts and Sciences
+        &copy; Language Arts and Science
     </div>
 <?php wp_footer()?>
 </footer>

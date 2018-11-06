@@ -1,7 +1,7 @@
 <section class="carousel" id="carousel">
     <div class="carouselleft" id="carouselleft"></div>
     <div class="slide carouselone" id=carouselone">
-        <div class="carouseltext"><p>We're a reliable translation company</p><p> that you can count on.</p></div>
+        <div class="carouseltext">We're a reliable translation company that you can count on.</div>
     </div>
     <div class="slide carouseltwo" id="carouseltwo">
         <div class="carouseltext"><p>We're reducing translation costs and </p><p> improving quality thru people and technology.</p></div>

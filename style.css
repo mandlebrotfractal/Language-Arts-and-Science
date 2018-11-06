@@ -85,14 +85,17 @@ address{
 }
 
 ::placeholder { 
-    color: black;
+    color: #464340;
     opacity: 1; 
+    font-family: Avenir Next DemiBold, sans-serif; 
 }
 
 :-ms-input-placeholder { 
-    color: black;
+    color: #464340;
+    font-family: Avenir Next DemiBold, sans-serif; 
 }
 
 ::-ms-input-placeholder {
-    color: black;
+    color: #464340;
+    font-family: Avenir Next DemiBold, sans-serif; 
 }

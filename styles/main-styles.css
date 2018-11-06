@@ -20,11 +20,12 @@
 
     .in{
         width: 96%; 
-        padding: 10px 0px 10px 5px; 
+        padding: 6px 0px 6px 5px;
         margin: 0px auto 10px auto; 
         display: block;
         border: none; 
         border-radius: 10px; 
+        font-size: 0.7em; 
     }
 
 /*Top Nave for Mobile*/
@@ -91,11 +92,12 @@
       .carouseltext{
           position: relative;
           top: 36%;
-          width: 75%;
+          width: 80%;
           color: #fbfbfb;
           font-family: Avenir Next, sans-serif;
           text-align: center;
           margin: auto;
+          text-shadow: 1px 1px #000000;
       }
 
       .carouselleft{
@@ -104,7 +106,7 @@
           border-left: 3px solid #fbfbfb; 
           transform: rotate(-45deg); 
           top: 40%; 
-          left: 5%;
+          left: 3%;
           height: 25px; 
           width: 25px; 
           z-index: 2; 
@@ -116,7 +118,7 @@
         border-left: 3px solid #fbfbfb; 
         transform: rotate(135deg); 
         top: 40%; 
-        right: 5%;
+        right: 3%;
         height: 25px; 
         width: 25px; 
       }
@@ -124,24 +126,23 @@
       .contactustop{
           position: relative;
           border-radius: 15px;
-          width: 125px; 
+          width: 150px; 
           margin: auto;
           top: 80%; 
           background: #ffffff; 
           text-align: center;
           padding: 1px 0px 1px 0px; 
-          font-size: 1.1em; 
-      }
-
-      .contactustoptext{
-          font-family: Avenir Next, sans-serif; 
+          font-size: 1.3em; 
+          font-family: Avenir Next DemiBold, sans-serif; 
+          letter-spacing: 2px; 
       }
 
       .contacttitle{
           color: #fffefe;
-          font-size: 1.2em; 
+          font-size: 0.9em; 
           padding: 25px 0px 15px 0px; 
-          font-family: Avenir Next, sans-serif; 
+          font-family: Avenir Next, sans-serif;
+          letter-spacing: 1.5px;  
       }
 
       .carouselone{
@@ -182,30 +183,31 @@
           text-align: center;
           font-family: Avenir Next, sans-serif;
           color: #fbfbfb;
-          font-size: 1.2em; 
+          font-size: 1.15em; 
           position: relative;
           margin: auto;
-          padding: 30px 0px 30px 0px; 
-          width: 85%; 
+          padding: 45px 0px 15px 0px; 
+          width: 95%; 
           text-shadow: 1px 1px #000000; 
       }
       
       .contactform{
           width: 85%; 
           margin: 15px auto 0px auto; 
-          background:rgba(0, 0, 0, 0.65); 
+          background:rgba(0, 0, 0, 0.55); 
           padding: 0px 2.5px 10px 2.5px; 
       }
 
       .contactsubmit{
           background: rgba(160,160,160, 0.5);
           color: #fbfbfb; 
-          font-family: Avenir Next, sans-serif;
+          font-family: Avenir Next Bold, sans-serif;
           display: block;
-          font-size: 1em; 
+          font-size: 0.7em; 
           margin: 20px auto 0px auto;
           border-radius: 15px; 
           padding: 5px 36px 5px 36px; 
+          letter-spacing: 2px; 
       }
 
 /*CSS for portfolio in Mobile*/
@@ -457,9 +459,36 @@
           font-family: Avenir Next, sans-serif; 
       }
 
+@media screen and (min-width: 400px){
+    .contactfronttext{
+        font-size: 1.3em; 
+        width: 90%
+    }
+
+    .contacttitle{
+        font-size: 1em; 
+    }
+
+    .in{
+        font-size: 0.75em;  
+    }
+
+    .contactsubmit{
+        font-size: 0.8em; 
+    }
+
+    .carouseltext{
+        font-size: 1.2em; 
+    }
+}
+
 @media screen and (min-width: 479px){
 
 /*Changes for 479px sizes and above*/
+
+    .in{
+        font-size: 0.95em; 
+    }
 
     .carousel{
         height: 375px; 
@@ -470,11 +499,21 @@
     }
 
     .carouseltext{
-        font-size: 1.2em; 
+        font-size: 1.35em; 
     }
 
     .contactfronttext{
-        font-size: 1.5em; 
+        font-size: 1.6em; 
+        padding: 45px 0px 20px 0px; 
+    }
+
+    .contacttitle{
+        font-size: 1.2em; 
+        padding:  20px 0px 15px 0px;
+    }
+
+    .contactsubmit{
+        font-size: 0.95em; 
     }
 
     .ourclientstitle{
@@ -502,7 +541,11 @@
 @media screen and (min-width: 579px){
     
     .carouseltext{
-        font-size: 1.35em; 
+        font-size: 1.5em; 
+    }
+
+    .contactfronttext{
+        font-size: 2em; 
     }
 
 }
@@ -594,6 +637,7 @@
     }
 
     .carouseltext{
+        width: 90%; 
         font-size: 1.65em; 
     }
 
@@ -606,9 +650,9 @@
     }
 
     .contactustop{
-        width: 140px; 
+        width: 160px; 
         font-size: 1.2em; 
-        padding: 2px 0px 2px 0px; 
+        padding: 3px 0px 3px 0px; 
     }
 
     .contactdfrontback{
@@ -620,7 +664,7 @@
     .contactfronttext{
         width: 60%; 
         display: inline-block; 
-        font-size: 1.65em; 
+        font-size: 1.75em; 
         text-shadow: 2px 2px #000000; 
     }
 
@@ -628,13 +672,29 @@
         width: 250px;
         float: right; 
         display: inline-block;
-        margin: 86px 35px 25px 20px;
+        margin: 55px 35px 37px 20px;
         border-radius: 12px; 
+    }
+
+    .contacttitle{
+        padding: 15px 0px 15px 0px;
+    }
+
+    .carouselleft{
+        height: 36px;
+        width: 36px;
+    }
+
+    .carouselright{
+        height: 36px;
+        width: 36px; 
     }
 
     .in{
         width: 80%; 
         border-radius: 30px; 
+        padding:  10px 0px 10px 5px;
+        font-size: 0.75em; 
     }
 
     .portfolio .title{
@@ -837,6 +897,11 @@
 
     .contactform{
         margin: 86px 35px 120px 20px;
+        width: 280px; 
+    }
+
+    .contacttitle{
+        font-size: 1.45em; 
     }
 
     .footerinfo{
@@ -846,6 +911,10 @@
 }
 
 @media screen and (min-width: 1025px){
+
+    .in{
+        width: 90%; 
+    }
 
     .desktop-main-menu-container ul li{
         font-size: 0.8em
@@ -864,15 +933,20 @@
     }
 
     .contactfronttext{
-        font-size: 2.25em; 
+        font-size: 2.3em; 
+        padding: 0px 0px 0px 0px; 
     }
 
     .contactform{
-        margin: 86px 35px 165px 20px;
+        margin: 110px 35px 140px 20px;
     }
 
     .carouseltext{
         font-size: 2.2em; 
+    }
+
+    .contactustop{
+        width: 180px; 
     }
 
     .card{
@@ -895,16 +969,16 @@
         font-size: 1.1em; 
     }
 
-    .blurb{
-        width: 25%; 
-    }
-
     .testimonial{
         padding: 0px 0px 40px 0px; 
     }
 }
 
 @media screen and (min-width: 1201px){
+
+    .in{
+        font-size: 0.9em; 
+    }
 
     .top-nav{
         height: 160px; 
@@ -939,7 +1013,16 @@
     }
 
     .contactform{
-        margin: 86px 35px 185px 20px;
+        margin: 110px 35px 150px 20px;
+        width: 300px; 
+    }
+
+    .contacttitle{
+        font-size: 1.65em; 
+    }
+
+    .contactsubmit{
+        font-size: 1.05em; 
     }
 
     .carouseltext{
@@ -979,7 +1062,7 @@
     }
 
     .contactfronttext{
-        font-size: 2.75em; 
+        font-size: 3em; 
     }
 
     .desktop-main-menu-container ul li {
@@ -987,7 +1070,7 @@
     }
 
     .contactform{
-        margin: 86px 35px 250px 20px; 
+        margin: 140px 35px 190px 20px; 
     }
 
 }
